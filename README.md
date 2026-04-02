@@ -349,7 +349,7 @@ Key ablation findings (Table V.I):
 @article{pfedllm2025,
   title   = {pFedLLM: Advancing Medical Imaging with LLM-Driven
              Personalized Federated Learning},
-  author  = {Anonymous Authors},
+  author  = {Rajesh Kumar},
   year    = {2025},
 }
 ```
