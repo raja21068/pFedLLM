@@ -1,0 +1,42 @@
+# pFedLLM — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Core deep learning ────────────────────────────────────────────────────
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.40.0
+datasets>=2.18.0
+
+# ── NLP / metrics ─────────────────────────────────────────────────────────
+nltk>=3.8.0
+rouge-score>=0.1.2
+evaluate>=0.4.0
+sacrebleu>=2.3.1
+
+# ── Differential privacy ──────────────────────────────────────────────────
+opacus>=1.4.0          # production DP-SGD (optional; pFedLLM has its own impl)
+
+# ── Scientific computing ──────────────────────────────────────────────────
+numpy>=1.24.0
+scipy>=1.11.0
+scikit-learn>=1.3.0
+
+# ── Data loading ──────────────────────────────────────────────────────────
+pandas>=2.0.0
+Pillow>=10.0.0
+pydicom>=2.4.0         # for DICOM medical images (optional)
+
+# ── Visualization ─────────────────────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+umap-learn>=0.5.3      # for Fig. 8 UMAP embeddings (optional)
+
+# ── Utilities ─────────────────────────────────────────────────────────────
+tqdm>=4.65.0
+PyYAML>=6.0
+accelerate>=0.27.0     # multi-GPU / mixed precision
+
+# ── Development ───────────────────────────────────────────────────────────
+pytest>=7.4.0
+black>=23.0.0
+isort>=5.12.0
