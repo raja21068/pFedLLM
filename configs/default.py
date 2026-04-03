@@ -94,7 +94,10 @@ class FederatedConfig:
     data_dir: Optional[str] = None
     num_workers: int = 4
 
-
+    # ── MLRG Checkpoint (optional) ───────────────────────────────────
+    mlrg_ckpt_path: Optional[str] = None  # path to mimic-cxr/finetune/best_model.ckpt
+    
+    
 @dataclass
 class AblationConfig:
     """For reproducing ablation studies from Section V.I."""
